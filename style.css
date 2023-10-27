@@ -1,15 +1,31 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-body {
-    overflow: hidden;
-}
-
-.wallpaper {
-    height: 100vh;
+.top-bar {
+    height: 15vh;
     width: 100vw;
-    background-position: center;
-    background-size: cover;
+    background-color: rgb(224, 221, 221);
+    box-shadow: 1px 4px 5px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.background {
+    width: 100vw;
+    height: 85vh;
+    background-color:rgb(235, 211, 168);
+}
+
+.addNewBook {
+    height: 40%;
+    width: 15%;
+    border-radius: 10px;
+    background-color:transparent;
+    border-color: transparent;
+    font-size: 20px;
+}
+
