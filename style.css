@@ -18,9 +18,10 @@
     width: 100vw;
     height: 85vh;
     background-color:rgb(243, 239, 231);
+    padding: 50px;
 }
 
-.addNewBook {
+.addNewBook, .formButton {
     height: 40%;
     width: 15%;
     font-size: clamp(0.7rem, 1.3vw, 2rem);
@@ -35,10 +36,75 @@
     box-shadow: 0 2px 3px rgba(133, 132, 132, 0.2);
 }
 
-.addNewBook:hover {
+.addNewBook:hover, .formButton:hover {
     transform: scale(1.005);
     border: 1px #C0C0C0;
     border-style: solid;
     cursor: pointer;
 }
+
+.books-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+    text-align: center;
+}
+
+.book {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 20px;
+    gap: 40px;
+    padding: 40px;
+    border-radius: 8px;
+    background-color: #fffbfb;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    line-height: 1.2;
+}
+
+#modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    border-radius: 8px;
+    transform: translate(-50%, -50%);
+    border-color: transparent;
+    height: 45vh;
+    width: 20vw;
+    padding: 15px;
+    gap: 20px;
+    background-color: #f3eeee;
+}
+
+#modal input {
+    background-color: white;
+    border-color: transparent;
+    border-radius: 6px;
+    width: 100%;
+    height:6vh;
+    margin-bottom: 15px;
+    padding: 4px;
+    font-size: 20px;
+}
+
+.firstInput {
+    margin-top: 45px;
+}
+
+.formButtons {
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.formButton {
+    padding: 0;
+    margin: 0;
+    width: 40%;
+}
+
+
 
