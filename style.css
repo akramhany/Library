@@ -23,9 +23,22 @@
 .addNewBook {
     height: 40%;
     width: 15%;
-    border-radius: 10px;
-    background-color:transparent;
-    border-color: transparent;
     font-size: 20px;
+    padding: 0 40px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(130, 151, 157);
+    transition: all 0.2s;
+    border-radius: 8px;
+    box-shadow: 0 2px 3px rgba(133, 132, 132, 0.2);
+}
+
+.addNewBook:hover {
+    transform: scale(1.005);
+    border: 1px #C0C0C0;
+    border-style: solid;
+    cursor: pointer;    
 }
 
