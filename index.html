@@ -1,20 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <dialog id="modal">
+        <form action="asdf" method="dialog">
+            <input type="text" name="author" id="author" placeholder="Author">
+            <input type="text" name="title" id="title" placeholder="Title">
+            <input type="number" name="price" id="price" placeholder="Price">
+        </form>
+        <button type="submit">Add</button>
+        <button class="closeButton">Close</button>
+    </dialog>
     <div class="top-bar">
-        <dialog>
-            <button autofocus>Add</button>
-            <p>This modal dialog has a groovy backdrop!</p>
-          </dialog>
-          <button class="addNewBook">Add New Book</button>
+        <button class="addNewBook">Add New Book</button>
     </div>
-    <div class="background"></div>
+    <div class="background">
+        <div class="books-grid">
+            <div class="book">
+                <p>blabla</p>
+                <p>adsf</p>
+            </div>
+            <div class="book">blabla</div>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
+
 </html>
