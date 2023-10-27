@@ -11,12 +11,14 @@
 <body>
     <dialog id="modal">
         <form action="asdf" method="dialog">
-            <input type="text" name="author" id="author" placeholder="Author">
+            <input class="firstInput" type="text" name="author" id="author" placeholder="Author">
             <input type="text" name="title" id="title" placeholder="Title">
             <input type="number" name="price" id="price" placeholder="Price">
         </form>
-        <button type="submit">Add</button>
-        <button class="closeButton">Close</button>
+        <div class="formButtons">
+            <button class="formButton" type="submit">Add</button>
+            <button class="closeButton formButton">Close</button>
+        </div>
     </dialog>
     <div class="top-bar">
         <button class="addNewBook">Add New Book</button>
