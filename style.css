@@ -23,7 +23,7 @@
 .addNewBook {
     height: 40%;
     width: 15%;
-    font-size: 20px;
+    font-size: clamp(0.7rem, 1.3vw, 2rem);
     padding: 0 40px;
     height: 40px;
     border-radius: 8px;
@@ -39,6 +39,6 @@
     transform: scale(1.005);
     border: 1px #C0C0C0;
     border-style: solid;
-    cursor: pointer;    
+    cursor: pointer;
 }
 
