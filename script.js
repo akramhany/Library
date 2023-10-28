@@ -11,6 +11,7 @@ function displayNewBook(book) {
     
     const newBook = document.createElement('div');
     newBook.className = "book";
+    newBook.dataset.index = myLibrary.length;
 
     for (const key in book) {
         const newCell = document.createElement('p');
@@ -24,7 +25,17 @@ function displayNewBook(book) {
     newButton.textContent = "Remove";
     newBook.appendChild(newButton);
 
+    newButton.addEventListener('click', () => {
+        removeBookFromLibrary(newBook);
+        newBook.remove();
+    })
+
     booksGrid.appendChild(newBook);
+}
+
+function removeBookFromLibrary(book) {
+    const bookIndex = `${book.dataset.index - 1}`;
+    myLibrary.splice(bookIndex, 1);
 }
 
 function addBookToLibrary(author, title, numberOfPages) {
