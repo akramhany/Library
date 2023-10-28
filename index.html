@@ -10,13 +10,13 @@
 
 <body>
     <dialog id="modal">
-        <form action="asdf" method="dialog">
+        <form class="modal-form" id="modalForm" action="asdf" method="dialog">
             <input class="firstInput" type="text" name="author" id="author" placeholder="Author">
             <input type="text" name="title" id="title" placeholder="Title">
-            <input type="number" name="price" id="price" placeholder="Price">
+            <input type="number" name="numOfPages" id="numOfPages" placeholder="numOfPages">
         </form>
         <div class="formButtons">
-            <button class="formButton" type="submit">Add</button>
+            <button class="modalAddButton formButton" form="modalForm" type="submit">Add</button>
             <button class="closeButton formButton">Close</button>
         </div>
     </dialog>
@@ -25,11 +25,6 @@
     </div>
     <div class="background">
         <div class="books-grid">
-            <div class="book">
-                <p>blabla</p>
-                <p>adsf</p>
-            </div>
-            <div class="book">blabla</div>
         </div>
     </div>
     <script src="script.js"></script>
