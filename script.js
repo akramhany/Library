@@ -18,6 +18,12 @@ function displayNewBook(book) {
         newBook.appendChild(newCell);
     }
     
+    //add a button to allow the user to remove a book from the library if he want
+    const newButton = document.createElement('button');
+    newButton.className = "deleteBook";
+    newButton.textContent = "Remove";
+    newBook.appendChild(newButton);
+
     booksGrid.appendChild(newBook);
 }
 

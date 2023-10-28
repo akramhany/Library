@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Poppins;
+    src: url(Fonts/Poppins/Poppins-SemiBold.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -21,10 +26,11 @@
     padding: 50px;
 }
 
-.addNewBook, .formButton {
+.addNewBook, .formButton, .deleteBook {
     height: 40%;
     width: 15%;
     font-size: clamp(0.7rem, 1.3vw, 2rem);
+    font-family: Poppins;
     padding: 0 40px;
     height: 40px;
     border-radius: 8px;
@@ -36,11 +42,17 @@
     box-shadow: 0 2px 3px rgba(133, 132, 132, 0.2);
 }
 
-.addNewBook:hover, .formButton:hover {
+.addNewBook:hover, .formButton:hover, .deleteBook:hover {
     transform: scale(1.005);
     border: 1px #C0C0C0;
     border-style: solid;
     cursor: pointer;
+}
+
+/*this is a styling for the button which would appear on every book added to the library*/
+.deleteBook {
+    background-color: rgb(232, 96, 96);
+    width: 100%;
 }
 
 .books-grid {
@@ -61,6 +73,7 @@
     background-color: #fffbfb;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     line-height: 1.2;
+    font-family: Poppins;
 }
 
 #modal {
